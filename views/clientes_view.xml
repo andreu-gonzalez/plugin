@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="fruteriamultimedia.clientes_providers__inherit">
+            <field name="name">FILTROS DE FRUTERIA PLUGIN</field>
+            <field name="model">fruteria.clientes_model</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="descripcion" />
+                    <field name="id_clientes"/>
+                    <field name="apellidos" />
+                    <group expand="0" string="Agrupar por">
+                        <filter name="descripcion" context="{'group_by':'descripcion'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
