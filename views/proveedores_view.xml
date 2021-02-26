@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="fruteriamultimedia.proveedores_form_inherit">
+            <field name="name">fruteria</field>
+            <field name="model">fruteria.proveedores_model</field>
+            <field name="inherit_id" ref="fruteria.listado_proveedores_model_form"/>
+            <field name="arch" type="xml">
+             <field name="name" position="before">
+                <field name="valoracion"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>
